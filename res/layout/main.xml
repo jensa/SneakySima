@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainLayout" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TableRow android:id="@+id/row1" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/title" android:text="Sneaky Sima login" />
+	</TableRow>
+
+	<TableRow android:id="@+id/row2" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<EditText android:id="@+id/usernamef" />
+
+		<TextView
+		    android:id="@+id/usernamet"
+		    android:minWidth="120dip"
+		    android:text="Användarnamn"
+		    />
+
+	</TableRow>
+
+	<TableRow android:id="@+id/row3" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<EditText android:id="@+id/passf" android:password="true" android:maxWidth="200dip">
+		</EditText>
+		<TextView android:id="@+id/passt" android:text="Lösenord"  android:minWidth="120dip">
+		</TextView>
+	</TableRow>
+
+	<TableRow android:id="@+id/row4" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<EditText android:id="@+id/hostf">
+		</EditText>
+		<TextView android:id="@+id/hostt" android:text="Host" android:minWidth="120dip">
+
+		</TextView>
+	</TableRow>
+
+	<TableRow android:id="@+id/row5" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Spinner android:id="@+id/coursef">
+		</Spinner>
+		<TextView android:id="@+id/courset" android:text="Kurs" android:minWidth="120dip">
+		</TextView>
+	</TableRow>
+
+	<TableRow android:id="@+id/row6" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<EditText android:id="@+id/msgf" android:maxWidth="200dip"/>
+		<TextView android:id="@+id/msgt" android:text="Meddelande" android:minWidth="120dip" />
+	</TableRow>
+
+	<TableRow android:id="@+id/row7" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/redt" android:text="Redovisa?" android:minWidth="120dip" />
+		<CheckBox android:id="@+id/redCheck" />
+	</TableRow>
+
+	<TableRow android:id="@+id/row8" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button android:id="@+id/connectb" android:text="Anslut">
+		</Button>
+	</TableRow>
+	
+	<TableRow android:id="@+id/row9" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button android:id="@+id/disconnectb" android:text="Koppla från">
+		</Button>
+	</TableRow>
+	<TableRow android:id="@+id/row10" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button android:id="@+id/debugB" android:text="Debug">
+		</Button>
+	</TableRow>
+
+</TableLayout>
+</ScrollView>
